@@ -31,6 +31,37 @@
 				"kind": "test",
 				"isDefault": true
 			}
+		},
+		{
+			"type": "cppbuild",
+			"label": "build project RPG",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"RPG_cpp\\src\\*.cpp",
+				"-o",
+				"RPG_cpp\\bin\\main.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+	},
+	{
+		"type": "shell",
+		"label": "Run main.exe",
+		"command": "RPG_cpp\\bin\\main.exe",
+		"group": {
+			"kind": "test",
+			"isDefault": true
 		}
+	}
 	]
 }
